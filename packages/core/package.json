@@ -5,6 +5,9 @@
     "@typechain/ethers-v5": "^9.0.0",
     "typechain": "^7.0.0"
   },
+  "scripts": {
+    "typechain": "typechain --target ethers-v5 --out-dir ./types/abis './src/abis/*.json'"
+  },
   "peerDependencies": {
     "ethers": ">=5.0.0",
     "react": ">=16.8"
