@@ -1,5 +1,5 @@
 {
-  "name": "@tokensuite/use-web3",
+  "name": "@tokensuite/use-web3-core",
   "version": "0.0.0",
   "dependencies": {
     "@typechain/ethers-v5": "^9.0.0",
