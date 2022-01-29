@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "tokensuite",
+  "author": "tokensuite",
+  "engines": {
+    "node": "^14 || ^16"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "new-version": "lerna version",
+    "diff": "lerna diff",
+    "bootstrap": "lerna bootstrap",
+    "start-example": "yarn --cwd packages/example start"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "@types/react": "^17.0.38",
+    "eslint": "^8.8.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "ethers": "^5.5.3",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "typescript": "^4.5.5"
+  }
+}

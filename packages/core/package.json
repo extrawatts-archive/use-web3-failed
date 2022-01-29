@@ -1,0 +1,12 @@
+{
+  "name": "@tokensuite/use-web3",
+  "version": "0.0.0",
+  "dependencies": {
+    "@typechain/ethers-v5": "^9.0.0",
+    "typechain": "^7.0.0"
+  },
+  "peerDependencies": {
+    "ethers": ">=5.0.0",
+    "react": ">=16.8"
+  }
+}
