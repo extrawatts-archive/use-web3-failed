@@ -1,12 +1,19 @@
 0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   globs: [],
+0 silly argv   _: [ 'bootstrap' ],
 0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js',
-0 silly argv   pkg: '@tokensuite/core'
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js'
 0 silly argv }
 1 notice cli v4.0.0
 2 verbose rootPath C:\Users\elvaleryn\use-web3
 3 info versioning independent
-4 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@tokensuite%2fcore - Not found
-4 error     at C:\Users\elvaleryn\use-web3\node_modules\npm-registry-fetch\check-response.js:95:15
+4 error JSONError: Unexpected token "}" (0x7D) in JSON at position 414 while parsing near "...ector\": \"^6.0.7\",\n  }\n}" in packages\example\package.json
+4 error
+4 error [0m [90m 14 |[39m     [32m"@web3-react/core"[39m[33m:[39m [32m"^6.1.9"[39m[33m,[39m[0m
+4 error [0m [90m 15 |[39m     [32m"@web3-react/injected-connector"[39m[33m:[39m [32m"^6.0.7"[39m[33m,[39m[0m
+4 error [0m[31m[1m>[22m[39m[90m 16 |[39m   }[0m
+4 error [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+4 error [0m [90m 17 |[39m }[0m
+4 error
+4 error     at parseJson (C:\Users\elvaleryn\use-web3\node_modules\parse-json\index.js:29:21)
+4 error     at parse (C:\Users\elvaleryn\use-web3\node_modules\load-json-file\index.js:15:9)
+4 error     at module.exports (C:\Users\elvaleryn\use-web3\node_modules\load-json-file\index.js:18:47)

@@ -1,10 +1,19 @@
-import { useNetworkProvider } from '@tokensuite-web3/core';
+import { useWeb3React } from '@web3-react/core';
+import { InjectedConnector } from '@web3-react/injected-connector';
 import React from 'react';
 
 const Home = () => {
-  const provider = useNetworkProvider('signer');
   const [Test, setTest] = React.useState();
-  return <div>hey</div>;
+  const { activate, deactivate, account, library } = useWeb3React();
+  const injected = new InjectedConnector({
+    supportedChainIds: [1, 4, 137, 56, 80001],
+  });
+  return (
+    <div>
+      hey
+      <button onClick={() => activate(injected)}>connect</button>
+    </div>
+  );
 };
 
 export default Home;

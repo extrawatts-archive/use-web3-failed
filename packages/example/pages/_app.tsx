@@ -1,7 +1,7 @@
 import React from 'react';
+import type { AppProps } from 'next/app';
 import ethers from 'ethers';
 import { Web3ReactProvider } from '@web3-react/core';
-import { Test } from 'example/components/test';
 
 const networkProviders = {
   /**
@@ -82,16 +82,15 @@ const networkProviders = {
   },
 };
 
-const Home: React.FC = () => {
-  const getLibrary = (provider: any): ethers.providers.Web3Provider => {
-    return new ethers.providers.Web3Provider(provider);
-  };
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+  const getLibrary = (provider: any): ethers.providers.Web3Provider =>
+    new ethers.providers.Web3Provider(provider);
   return (
     <>
       <Web3ReactProvider getLibrary={getLibrary}>
-        <Test />
+        <Component {...pageProps} />
       </Web3ReactProvider>
     </>
   );
-};
-export default Home;
+}
+export default MyApp;

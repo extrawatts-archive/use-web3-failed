@@ -7,8 +7,7 @@
   },
   "license": "MIT",
   "workspaces": [
-    "packages/*",
-    "example/"
+    "packages/*"
   ],
   "scripts": {
     "new-version": "lerna version",
