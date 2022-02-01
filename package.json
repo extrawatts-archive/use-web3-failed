@@ -1,13 +1,14 @@
 {
   "private": true,
-  "name": "tokensuite-web3-hooks",
+  "name": "tokensuite-web3",
   "author": "tokensuite",
   "engines": {
     "node": "^14 || ^16"
   },
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "example/"
   ],
   "scripts": {
     "new-version": "lerna version",
