@@ -13,6 +13,7 @@
     "typechain": "^7.0.0",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
-    "@tokensuite-web3/core": "./packages/core"
+    "@tokensuite-web3/core": "./packages/core",
+    "ethers": "^5.5.3"
   }
 }
